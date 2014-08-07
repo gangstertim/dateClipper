@@ -1,0 +1,43 @@
+<html>
+  <body>
+      <h1 class="bg-primary" style="font-size:24px;padding-left:15px">
+        <img src="calPlus.jpeg" alt="here be dates" class="img-rounded" style="max-width:26px">
+        Date Clipper
+      </h1>
+    <div id="wrapper" style="width:375px;height:170px">
+      <div class="row" id="idRow">
+        <div class="col-xs-7">The current calendar ID is: </div>
+        <div class="col-xs-5" id="statusId"></div>
+      </div>
+      
+      <div class="row" id="authRow">
+        <div id="statusAuth">The application IS currently authorized</div>
+      </div>    
+      
+      <hr width=100% align=left>
+      
+      <div class="row">
+        To change the calendar ID:
+      </div>
+      <form class="form-inline" id="form1" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="calId">Set Calendar ID</label>
+          <input type="text" class="form-control" id="calId" placeholder="john_doe@gmail.com">
+        </div>
+        <button type="submit" id="updateCalendarId-btn" class="btn btn-default">Update Calendar ID</button>
+      </form>
+      
+      <button type="button" id="authorize-btn">Authorize Extension</button>
+      <button type="button" id="disable-btn">Disable Extension</button>
+
+    </div>
+
+    <link href="customBS.css" rel="stylesheet" type="text/css" />
+    <link href="popupStyles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../AppFramework/jquery.min.js"></script>
+    <script type="text/javascript" src="../framework-ui/framework_api.js"></script>
+    <script src="popup1.js"></script>
+    
+
+  </body>
+</html>
